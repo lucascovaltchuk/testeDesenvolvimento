@@ -1,0 +1,14 @@
+
+@{
+    ViewData["Title"] = "Gerar Excel";
+}
+
+<h2>Gerar Excel</h2>
+
+<form asp-action="GerarExcel" method="post">
+    <div class="form-group">
+        <label for="quantidade">Quantidade de registros:</label>
+        <input type="number" id="quantidade" name="quantidade" min="10" max="1000" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Gerar Excel</button>
+</form>
