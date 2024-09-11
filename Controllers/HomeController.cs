@@ -38,7 +38,7 @@ public class HomeController : Controller
         var filePath = Path.Combine(directoryPath, fileName);
         System.IO.File.WriteAllBytes(filePath, excelBytes);
 
-        _emailService.SendEmail(filePath, "sergio.junior@atak.com.br", "https://github.com/YourRepoLink");
+        _emailService.SendEmail(filePath, "sergio.junior@atak.com.br", "https://github.com/lucascovaltchuk/testeDesenvolvimento");
 
         return File(excelBytes, "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", fileName);
     }
